@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer with Audio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Election Countdown</title>
 </head>
 <body>
     <div class="container">
-        <div class="clock">
-            <span id="time">Loading...</span>
-        </div>
+        <div id="time" class="clock"></div>
     </div>
+
+    <!-- Interaction Overlay -->
+    <div id="interaction-overlay" class="overlay">
+        <div class="click-message">Click anywhere to enable sound</div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
