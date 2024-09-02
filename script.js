@@ -9,8 +9,8 @@ function playAlertSound() {
 }
 
 // Specify the exact time when the sound should play
-const targetDays = 62;
-const targetHours = 18;
+const targetDays = 0;
+const targetHours = 0;
 const targetMinutes = 3;
 const targetSeconds = 42;
 
