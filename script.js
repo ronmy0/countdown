@@ -20,7 +20,7 @@ function updateCountdown() {
     const currentET = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
     const currentETDate = new Date(currentET);
 
-    const targetDate = new Date('November 3, 2024 19:00:00 GMT-0500'); // GMT-0500 for EST
+    const targetDate = new Date('November 5, 2024 19:00:00 GMT-0500'); // GMT-0500 for EST
 
     const diff = targetDate - currentETDate; // Difference in milliseconds
 
