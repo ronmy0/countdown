@@ -14,13 +14,16 @@ const targetHours = 0;
 const targetMinutes = 3;
 const targetSeconds = 42;
 
-// Function to display the countdown to 7 PM EST on November 3rd
-function updateCountdown() {
-    const now = new Date();
+// Function to fetch the current EST time from WorldTimeAPI
+async function fetchCurrentTime() {
+    const response = await fetch('http://worldtimeapi.org/api/timezone/America/New_York');
+    const data = await response.json();
+    return new Date(data.datetime); // Returns the current time in EST
+}
 
-    // Get the current time in Eastern Time (EST)
-    const currentET = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
-    const currentETDate = new Date(currentET);
+// Function to display the countdown to 7 PM EST on November 5th
+async function updateCountdown() {
+    const currentETDate = await fetchCurrentTime();
 
     // Set target date and time: 7 PM EST on November 5th
     const targetDate = new Date('November 5, 2024 19:00:00 GMT-0500'); // GMT-0500 for EST
