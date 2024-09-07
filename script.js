@@ -17,9 +17,12 @@ const targetSeconds = 42;
 // Function to display the countdown to 7 PM EST on November 3rd
 function updateCountdown() {
     const now = new Date();
+
+    // Get the current time in Eastern Time (EST)
     const currentET = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
     const currentETDate = new Date(currentET);
 
+    // Set target date and time: 7 PM EST on November 5th
     const targetDate = new Date('November 5, 2024 19:00:00 GMT-0500'); // GMT-0500 for EST
 
     const diff = targetDate - currentETDate; // Difference in milliseconds
@@ -37,6 +40,7 @@ function updateCountdown() {
     const formattedTime = `${days} | ${hours}:${minutes}:${seconds}`;
     document.getElementById('time').textContent = formattedTime;
 
+    // Play sound at the specified countdown target
     if (
         days === targetDays &&
         hours === String(targetHours).padStart(2, '0') &&
