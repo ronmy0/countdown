@@ -16,7 +16,7 @@ const targetSeconds = 42;
 
 // Function to fetch the current EST time from WorldTimeAPI
 async function fetchCurrentTime() {
-    const response = await fetch('http://worldtimeapi.org/api/timezone/America/New_York');
+    const response = await fetch('https://worldtimeapi.org/api/timezone/America/New_York');
     const data = await response.json();
     return new Date(data.datetime); // Returns the current time in EST
 }
