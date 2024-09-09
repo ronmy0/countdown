@@ -26,7 +26,7 @@ async function startCountdown() {
     const currentETDate = await fetchCurrentTime();
 
     // Set target date and time: 7 PM EST on November 5th
-    const targetDate = new Date('November 5, 2024 19:00:00 GMT-0500'); // GMT-0500 for EST
+    const targetDate = new Date('September 9, 2024 9:30:00 GMT-0500'); // GMT-0500 for EST
 
     // Calculate the initial time difference
     let diff = targetDate - currentETDate;
