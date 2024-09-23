@@ -11,7 +11,7 @@ function playAlertSound() {
 // Specify the exact time when the sound should play
 const targetDays = 43;
 const targetHours = 2;
-const targetMinutes = 43;
+const targetMinutes = 33;
 const targetSeconds = 40;
 
 // Function to fetch the current EST time from WorldTimeAPI
