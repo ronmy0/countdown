@@ -9,9 +9,9 @@ function playAlertSound() {
 }
 
 // Specify the exact time when the sound should play
-const targetDays = 0;
-const targetHours = 0;
-const targetMinutes = 3;
+const targetDays = 39;
+const targetHours = 22;
+const targetMinutes = 53;
 const targetSeconds = 40;
 
 // Function to display the countdown to midnight UTC on November 6th, 2024
