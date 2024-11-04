@@ -33,7 +33,7 @@ function updateCountdown() {
     const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
     const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
 
-    const formattedTime = `${days} | ${hours}:${minutes}:${seconds}`;
+    const formattedTime = `${hours}:${minutes}:${seconds}`;
     document.getElementById('time').textContent = formattedTime;
 
     // Play sound at the specified countdown target
