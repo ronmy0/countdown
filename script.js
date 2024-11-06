@@ -19,7 +19,7 @@ function updateCountdown() {
     const now = new Date();
 
     // Set target date and time: midnight UTC on November 6th, 2024
-    const targetDate = new Date(Date.UTC(2024, 10, 6, 2, 0, 0)); // November 6th, 2024, 00:00:00 UTC
+    const targetDate = new Date(Date.UTC(2024, 10, 6, 1, 0, 0)); // November 6th, 2024, 00:00:00 UTC
 
     const diff = targetDate - now; // Difference in milliseconds
 
